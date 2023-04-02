@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funny Videos</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        video {
+            width: 400px;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -18,6 +23,15 @@
             <p>Captions are generally given in the same language as the original content. It includes relevant sound effects or background noises because the intended audience is those who cannot hear the audio for some reasons.</p>
             <!-- TODO: Put the dog video here. Set the width to 400 pixels and include controls -->
             <!-- Include a track tag with the src attribute set to "dog-video.vtt" -->
+            <video controls>
+                <source src="assets/videos/dog-video.mp4">
+                    <track 
+                        src="assets/text-tracks/dog-video.vtt"
+                        kind="captions"
+                        srclang="En"
+                        label="En Captions" />             
+            </video>                
+
         </div>
         <div>
             <h2>Subtitles</h2>
@@ -27,6 +41,16 @@
                 Obviously, none of us can understand what pigeons are saying, so we'll just make up some subtitles! Create your own time stamps and invent your own dialog!
             </p>
             <!-- TODO: Put the pigeons in love MP4 video here-->
+            <video controls>
+                <source src="assets/videos/pigeons-in-love.mp4">
+                    <track 
+                        src="assets/text-tracks/dog-video.vtt"
+                        kind="captions"
+                        srclang="En"
+                        srclang="French"
+                        label="English Captions"
+                        label="English Captions" />
+            </video>
             <!-- This video should have controls and two track tags (for example, for English AND French subtitles) -->
         </div>
     </main>
