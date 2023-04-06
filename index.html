@@ -41,17 +41,22 @@
                 Obviously, none of us can understand what pigeons are saying, so we'll just make up some subtitles! Create your own time stamps and invent your own dialog!
             </p>
             <!-- TODO: Put the pigeons in love MP4 video here-->
+            <!-- This video should have controls and two track tags (for example, for English AND French subtitles) -->
             <video controls>
                 <source src="assets/videos/pigeons-in-love.mp4">
                     <track 
-                        src="assets/text-tracks/pigeon-video.vtt"
+                        src="assets/text-tracks/pigeon-video-fr.vtt"
                         kind="subtitles"
                         srclang="Fr"
                         label="French Subtitles"
+                        />
+                         <track 
+                        src="assets/text-tracks/pigeon-video-en.vtt"
+                        kind="subtitles"
+                        srclang="En"
+                        label="English Subtitles"
                          />
             </video>
-            <!-- This video should have controls and two track tags (for example, for English AND French subtitles) -->
-            
         </div>
     </main>
 </body>
